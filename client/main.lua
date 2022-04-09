@@ -108,7 +108,7 @@ RegisterNetEvent('prison:client:Enter', function(time)
 	SetEntityCoords(PlayerPedId(), RandomStartPosition.coords.x, RandomStartPosition.coords.y, RandomStartPosition.coords.z - 0.9, 0, 0, 0, false)
 	SetEntityHeading(PlayerPedId(), RandomStartPosition.coords.w)
 	Wait(500)
-	TriggerEvent('animations:client:EmoteCommandStart', {RandomStartPosition.animation})
+	--TriggerEvent('animations:client:EmoteCommandStart', {RandomStartPosition.animation})
 
 	inJail = true
 	jailTime = time
